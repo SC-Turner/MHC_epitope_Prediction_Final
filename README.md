@@ -1,2 +1,2 @@
-# MHC_epitope_Prediction_Final
+# MHC epitope Prediction
 Screens MHC pocket sequences for functional homology at the pocket level
