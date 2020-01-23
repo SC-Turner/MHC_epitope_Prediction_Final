@@ -111,14 +111,10 @@ for (i in 1:length(Alignnames)) {
 }
 temp <- NULL
 
-#possible additional argument --lop -3 --lep -1
-
 Alignment_2[[1]][!grepl("x", Alignment_2[[1]]$temp.unmasked), ]
 
-saveRDS(Alignment_2, file = "Alignment_Complete.RDS")
+#saveRDS(Alignment_2, file = "Alignment_Complete.RDS") #Optional alignment save
 Alignment_2 <- readRDS("Alignment_Complete.RDS")
-
-#Alignment Position Alignment
 
 aa <- c("G","A","R","H","K","D","E","S","T","N","Q","C","P","V","I","L","M","F","Y","W")
 
@@ -163,8 +159,6 @@ names(Alignment_refsequence_adjustment_OR) <- Alignnames
 names(Alignment_qersequence_adjustment_OR) <- Alignnames
 
 #Calculate Binding Probabilities
-#install.packages("str_sub")
-
 BP <- read.table(paste0("InputFiles/",qname,"/prob.txt"), sep = "\t")
 Probabilities <- as.numeric(str_sub(BP[,1], -5, -1))
 Position <- c(1:nrow(BP))
