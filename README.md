@@ -16,3 +16,4 @@ Screens MHC pocket sequences for functional homology at the pocket level
 
 ## References
 1. Kim, Y., Sidney, J., Pinilla, C. et al. Derivation of an amino acid similarity matrix for peptide:MHC binding and its application as a Bayesian prior. BMC Bioinformatics 10, 394 (2009). https://doi.org/10.1186/1471-2105-10-394
+2. Robinson J, Maccari G, Marsh SGE, Walter L, Blokhuis J, Bimber B, Parham P, De Groot NG, Bontrop RE, Guethlein LA, and Hammond JA, KIR Nomenclature in non-human species, Immunogenetics (2018), in preparation
