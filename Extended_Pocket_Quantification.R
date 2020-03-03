@@ -237,11 +237,7 @@ temp4 <- data.frame(temp3, recode(temp3[,5], "A_prot_2" = "HLA_A",
                                   "Patr_B" = "Patr",
                                   "Patr_A" = "Patr"))
 
-                  
-        
-
-###
-#GRAPHS#
+#Generate graphs of alignment scores
 boxplot_1 <- ggplot(temp4, aes(x=temp4[,6], y=temp4[,2])) + geom_boxplot() +
   xlab("MHC Supertype") +
   ylab("Pocket Alignment Score") +
